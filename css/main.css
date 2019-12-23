@@ -4,29 +4,32 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Open Sans', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #333;
 }
+
 .blur {
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
-    background-image: url(../img/Empyrean.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1;
-}
-.data {
-    background-color: rgb(0,0,0);
     background-image: url(../img/red-blue.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.data {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     border: 3px solid #D7C599;
     position: absolute;
@@ -35,16 +38,19 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 20%;
-    padding: 20px;
     text-align: center;
     color: #BEA966;
     max-width: 450px;
     min-width: 200px;
+    min-height: 150px;
 }
+
 .container {
+    display: grid;
     max-width: 1050px;
     margin: 0 auto;
 }
+
 h1 {
     font-size: 32px;
     font-weight: 400;
@@ -52,45 +58,57 @@ h1 {
     margin: 0 0 0;
     color: #333;
 }
+
 h2 {
     font-size: 28px;
     line-height: 1.5em;
     margin: .5em 0 0;
 }
+
 p {
     color: #707070;
     font-size: 1.1em;
     line-height: 1.7em;
 }
+
 a {
     color: #BEA966;
     text-decoration: none;
 }
+
 .hero {
     text-align: center;
     padding: 0 0 10px 0;
     color: #BEA966;
     margin: 0;
-    padding-top: 2em;
     font-size: 42px;
     font-weight: 300;
 }
+
 .rainbow {
     background: url(../img/rainbow.png) !important;
     background-size: 5ch !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
-.footer{
+
+.footer {
     margin-top: 30px;
-    font-size:14px;
-    bottom: 0px;
-    position: fixed;
+    font-size: 14px;
     text-align: center;
+    justify-self: center;
+    position: fixed;
+    bottom: 1px;
 }
-.bottom{
+
+.bottom {
     height: 3px;
     width: 100%;
     background: url(../img/separator-open.png) center center repeat-x;
     position: fixed;
+}
+
+.center_you_fucks {
+    justify-self: center;
+    align-self: center;
 }
