@@ -16,7 +16,7 @@ body {
     filter: blur(3px);
     -webkit-filter: blur(3px);
     height: 100%;
-    background-image: url(../img/vitruvianbg.png);
+    background-image: url(../img/vitruvianbg.jpg);
     background-size: cover;
     position: absolute;
     top: 0;
